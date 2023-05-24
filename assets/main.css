@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* add font opensans from path "assets/fonts/Quicksand */
+@layer base {
+  @font-face {
+    font-family: "Quicksand Light";
+    font-style: normal;
+    src: url("../assets/fonts/Quicksand/static/Quicksand-Light.ttf")
+      format("truetype");
+  }
+
+  @font-face {
+    font-family: "Quicksand Regular";
+    font-style: normal;
+    src: url("../assets/fonts/Quicksand/static/Quicksand-Regular.ttf")
+      format("truetype");
+  }
+
+  @font-face {
+    font-family: "Quicksand Medium";
+    font-style: normal;
+    src: url("../assets/fonts/Quicksand/static/Quicksand-Medium.ttf")
+      format("truetype");
+  }
+
+  @font-face {
+    font-family: "Quicksand Bold";
+    font-style: normal;
+    src: url("../assets/fonts/Quicksand/static/Quicksand-Bold.ttf")
+      format("truetype");
+  }
+
+  @font-face {
+    font-family: "Quicksand SemiBold";
+    font-style: normal;
+    src: url("../assets/fonts/Quicksand/static/Quicksand-SemiBold.ttf")
+      format("truetype");
+  }
+
+  html {
+    font-family: "Quicksand Regular", sans-serif;
+  }
+}
