@@ -274,9 +274,15 @@
         >
           <template x-for="(skillType, index) in skillTypes" x-key="index">
             <div
-              class="col bg-mauve-300 rounded py-1 px-2 text-center text-white font-semibold"
+              class="col rounded py-1 px-2 text-center text-white font-semibold transition duration-200"
               x-text="skillType"
+              @click="filterSkills(skillType)"
+              :class="{
+                'bg-mauve-300' : filterSkill != skillType,
+                'bg-mauve-400' : filterSkill == skillType
+              }"
             ></div>
+            <!-- skillTypes == filterSkill -->
           </template>
         </div>
         <div class="w-full row-auto py-5">
@@ -984,6 +990,7 @@
           caption: "",
           skillTypes: dataPortfolio.skillType,
           skills: "",
+          filterSkill: "",
           // dataPengguna: [],
           init: function () {
             this.skillGroup();
@@ -1001,8 +1008,10 @@
           },
           skillGroup(filter = null) {
             let skillGroups = {};
+              filter = filter ? filter.toLowerCase() : filter;
 
             dataPortfolio.skill.forEach(function (skill) {
+
               if(filter && skill.type != filter) {
                 return;
               }
@@ -1029,6 +1038,10 @@
               beginner: sortedSkillGroups.beginner,
               other: sortedSkillGroups.other,
             }
+          },
+          filterSkills(filter) {
+            this.filterSkill = (filter == this.filterSkill) ? null : filter;
+            this.skillGroup(this.filterSkill);
           },
         };
       }
