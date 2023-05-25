@@ -273,7 +273,7 @@
           class="py-3 grid grid-cols-2 lg:grid-cols-4 gap-3 max-w-2xl mx-auto"
         >
           <template x-for="(skillType, index) in skillTypes" x-key="index">
-            <div
+            <a href="javascript:void(0)"
               class="col rounded py-1 px-2 text-center text-white font-semibold transition duration-200"
               x-text="skillType"
               @click="filterSkills(skillType)"
@@ -281,7 +281,7 @@
                 'bg-mauve-300' : filterSkill != skillType,
                 'bg-mauve-400' : filterSkill == skillType
               }"
-            ></div>
+            ></a>
             <!-- skillTypes == filterSkill -->
           </template>
         </div>
