@@ -249,7 +249,7 @@
             </a>
           </div>
         </div>
-        <div class="col-span-1 mx-auto md:mx-0 md:m-auto relative">
+        <div class="col-span-1 mx-auto md:m-auto relative">
           <div
             class="relative flex items-center w-72 h-72 overflow-hidden bg-center rounded rounded-tl-[40%] rounded-br-[40%]"
           >
@@ -268,365 +268,40 @@
           Skill dan Tool yang saya gunakan untuk membangun dan mengembangkan
           website
         </p>
+
         <div
           class="py-3 grid grid-cols-2 lg:grid-cols-4 gap-3 max-w-2xl mx-auto"
         >
-          <div
-            class="col bg-mauve-300 rounded py-1 px-2 text-center text-white font-semibold"
-          >
-            Backend
-          </div>
-          <div
-            class="col bg-mauve-300 rounded py-1 px-2 text-center text-white font-semibold"
-          >
-            Frontend
-          </div>
-          <div
-            class="col bg-mauve-300 rounded py-1 px-2 text-center text-white font-semibold"
-          >
-            CSS
-          </div>
-          <div
-            class="col bg-mauve-300 rounded py-1 px-2 text-center text-white font-semibold"
-          >
-            Database
-          </div>
+          <template x-for="(skillType, index) in skillTypes" x-key="index">
+            <div
+              class="col bg-mauve-300 rounded py-1 px-2 text-center text-white font-semibold"
+              x-text="skillType"
+            ></div>
+          </template>
         </div>
         <div class="w-full row-auto py-5">
+          <template x-for="(skill, index) in skills" x-key="index">
+            
           <div id="advance" class="font-semibold text-lg">
-            <h2>Advance</h2>
+            <h2 x-text="index" style="text-transform: capitalize;"></h2>
             <div
               class="w-full my-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 lg:gap-5"
             >
+            <template x-for="(skillDetail, index) in skill" x-key="index">
               <a
                 href="javascript:;"
                 @click="toggleModal()"
                 class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
+                
               >
-                <i class="fa-brands fa-angular"></i>
-                PHP
+              <i class="fa-brands fa-angular"></i>
+                <p x-text="skillDetail.name" ></p>
               </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Laravel
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Yii
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Bootstrap
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Tailwind
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Mysql
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Jquery
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Java script
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                HTML 5
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                CSS 3
-              </a>
+              </template>
+
             </div>
           </div>
-          <div id="intermediate" class="font-semibold text-lg">
-            <h2>Intermediate</h2>
-            <div class="w-full my-5 grid lg:grid-cols-5 gap-5">
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Vue JS
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                React JS
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Next JS
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Livewire
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Dart
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Flutter
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Postgres SQL
-              </a>
-            </div>
-          </div>
-          <div id="beginner" class="font-semibold text-lg">
-            <h2>Beginner</h2>
-            <div class="w-full my-5 grid lg:grid-cols-5 gap-5">
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Node JS
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Python
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Angular
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                GO
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Java
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Mongo DB
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Firebase
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                CI
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Nuxt JS
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Type Script
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Express Js
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Dotnet
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Redis
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Alpine JS
-              </a>
-            </div>
-          </div>
-          <div id="beginner" class="font-semibold text-lg">
-            <h2>Other</h2>
-            <div class="w-full my-5 grid lg:grid-cols-5 gap-5">
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                GIT
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Github
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                VS Code
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Gitlab
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Jira
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Minio
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Keycloak
-              </a>
-              <a
-                href="javascript:;"
-                @click="toggleModal()"
-                class="flex justify-center items-center gap-2 border-melrose-400 border rounded bg-melrose-300 hover:bg-melrose-400 text-white transition duration-300"
-              >
-                <i class="fa-brands fa-angular"></i>
-                Solr
-              </a>
-            </div>
-          </div>
+        </template>
         </div>
       </section>
       <section id="experience" class="">
@@ -1299,6 +974,7 @@
       defer
     ></script>
     <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    <script src="./data.js"></script>
     <script>
       function data() {
         return {
@@ -1306,9 +982,11 @@
           lightboxOpen: false,
           imgSrc: "",
           caption: "",
+          skillTypes: dataPortfolio.skillType,
+          skills: "",
           // dataPengguna: [],
           init: function () {
-            // this.getDataPengguna();
+            this.skillGroup();
           },
           toggleModal() {
             this.modelOpen = !this.modelOpen;
@@ -1320,6 +998,37 @@
           },
           callApi() {
             console.log("Memanggil API...");
+          },
+          skillGroup(filter = null) {
+            let skillGroups = {};
+
+            dataPortfolio.skill.forEach(function (skill) {
+              if(filter && skill.type != filter) {
+                return;
+              }
+              var level = skill.level;
+
+              // Mengecek apakah level sudah ada di skillGroups
+              if (!skillGroups[level]) {
+                skillGroups[level] = [];
+              }
+
+              // Menambahkan skill ke kelompok yang sesuai dengan level
+              skillGroups[level].push(skill);
+            });
+
+            // short dataPortfolio by skill level 
+            let sortedSkillGroups = {}; 
+            Object.keys(skillGroups).sort().forEach(function(key) {
+              sortedSkillGroups[key] = skillGroups[key];
+            });
+
+            this.skills = {
+              advanced: sortedSkillGroups.advanced,
+              intermediate: sortedSkillGroups.intermediate,
+              beginner: sortedSkillGroups.beginner,
+              other: sortedSkillGroups.other,
+            }
           },
         };
       }
