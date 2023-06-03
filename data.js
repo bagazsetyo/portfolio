@@ -14,12 +14,13 @@ var dataPortfolio = {
     },
     {
       name: "Laravel",
-      level: "beginner",
+      level: "advanced",
       experience: "4 Tahun",
       type: "backend",
       description:
         "Berpengalaman dalam pengembangan dan pembuatan aplikasi menggunakan framework laravel pada aplikasi monolitik maupun microservice ",
       project: ["SIKN ANRI", "Regmus"],
+      certificate: ["bwa"]
     },
     {
       name: "Yii",
@@ -267,7 +268,7 @@ var dataPortfolio = {
     },
     {
       name: "Git",
-      level: "other",
+      level: "tools",
       type: "-",
       experience: "3 Tahun",
       description: "-",
@@ -275,7 +276,7 @@ var dataPortfolio = {
     },
     {
       name: "Github",
-      level: "other",
+      level: "tools",
       experience: "3 Tahun",
       type: "-",
       description: "-",
@@ -283,7 +284,7 @@ var dataPortfolio = {
     },
     {
       name: "Gitlab",
-      level: "other",
+      level: "tools",
       experience: "3 Tahun",
       type: "-",
       description: "-",
@@ -291,7 +292,7 @@ var dataPortfolio = {
     },
     {
       name: "VS Code",
-      level: "other",
+      level: "tools",
       experience: "-",
       type: "-",
       description: "-",
@@ -299,7 +300,7 @@ var dataPortfolio = {
     },
     {
       name: "Jira",
-      level: "other",
+      level: "tools",
       experience: "-",
       type: "-",
       description:
@@ -308,7 +309,7 @@ var dataPortfolio = {
     },
     {
       name: "Minio",
-      level: "other",
+      level: "tools",
       experience: "3 Bulan",
       type: "-",
       description: "Melakukan uploading file ke minio",
@@ -316,7 +317,7 @@ var dataPortfolio = {
     },
     {
       name: "Keycloak",
-      level: "other",
+      level: "tools",
       experience: "3 Bulan",
       type: "-",
       description:
@@ -325,7 +326,7 @@ var dataPortfolio = {
     },
     {
       name: "Solr",
-      level: "other",
+      level: "tools",
       experience: "3 Bulan",
       type: "-",
       description: "Melakukan searching data menggunakan solr",
@@ -340,19 +341,195 @@ var dataPortfolio = {
       project: ["Finpay"],
     },
   ],
+
+  experience: [
+    {
+      name: "PT. Microvac Indonesia",
+      job: "Fullstack Developer",
+      description: "Sebagai seorang pengembang website, saya bertanggung jawab dalam pengembangan dan pembuatan website dari sisi frontend dan backend, serta melakukan maintenance, memperbaiki bug pada website yang pemerintah. Baik itu website monolitik maupun microservice. serta melakukan pengembangan aplikasi lainnya.",
+      start: "Juli 2021",
+      end: "Sekarang",
+      status: "Fulltime",
+    },
+    {
+      name: "PT. Ruby Permata Indonesia",
+      job: "Fullstack Developer",
+      description: "Sebagai seorang pengembang website, saya bertanggung jawab dalam pengembangan dan pembuatan website aplikasi quiz online, serta melakukan maintenance, memperbaiki bug pada website admin finpay.",
+      start: "November 2021",
+      end: "September 2022",
+      status: "Parttime",
+    },
+    {
+      name: "Lion of Informatics",
+      job: "Backend Developer",
+      description: "Sebagai seorang pengembang backend, saya bertanggung jawab dalam pengembangan dan pembuatan API dan Admin Panel untuk aplikasi Wedding Invitation.",
+      start: "Oktober 2020",
+      end: "Juli 2021",
+      status: "Fulltime",
+    },
+    {
+      name: "Technophoria",
+      job: "Tester",
+      description: "Sebagai seorang tester, saya bertanggung jawab dalam melakukan testing pada aplikasi yang dibuat oleh perusahaan.",
+      start: "November 2018",
+      end: "Januari 2019",
+      status: "Praktik Kerja Lapangan",
+    },
+    {
+      name: "Hotel Safira",
+      job: "IT Support",
+      description: "Sebagai seorang IT Support, saya bertanggung jawab dalam melakukan maintenance pada komputer, serta melakukan instalasi software dan hardware.",
+      start: "Febriari 2019",
+      end: "Mei 2019",
+      status: "Praktik Kerja Lapangan",
+    }
+  ],
+
+  education: [
+    {
+      name: "Universitas Sangga Buana YPKP",
+      major: "Teknik Informatika",
+      description: "Oktober 2022 - Now \n belajar tentang dasar pemrograman, dan pembuatan aplikasi berbasis web dan mobile",
+    },
+    {
+      name: "SMK Negeri 2 Magelang",
+      major: "Rekayasa Perangkat Lunak",
+      description: "Juni 2017 - Juli 2020 \n Belajar tentang dasar pemrograman, algoritma, dan struktur data",
+    }
+  ],
+
+  project: [
+    {
+      name: "AHU Online",
+      thumbnail: "",
+      description: "Website Direktorat Jenderal Administrasi Hukum Umum adalah unit kerja yang berada di bawah dan bertanggung jawab kepada Menteri Hukum dan Hak Asasi Manusia Republik Indonesia yang mempunyai tugas menyelenggarakan urusan di bidang administrasi hukum umum.",
+      technology: ["YII", "Bootstrap", "Mysql", "Jquery"],
+    },
+    {
+      name: "Kewarganegaraan",
+      thumbnail: "",
+      description: "Website untun mengubah status kewarganegaraan",
+      technology: ["YII", "Bootstrap", "Mysql", "Jquery"],
+    },
+    {
+      name: "Pewarganegaraan",
+      thumbnail: "",
+      description: "Website untuk proses alih status dari Warga Negara Asing (WNA) menjadi Warga Negara Indonesia (WNI) melalui berbagai dasar permohonan, termasuk naturalisasi yang diajukan oleh WNA tersebut.",
+      technology: ["YII", "Bootstrap", "Mysql", "Jquery"],
+    },
+    {
+      name: "E-Office",
+      thumbnail: "",
+      description: "Website untuk melakukan pengajuan surat keterangan dari kantor",
+      technology: ["YII", "Bootstrap", "Mysql", "Jquery"],
+    },
+    {
+      name: "Sistem Administrasi Badan Usaha",
+      thumbnail: "",
+      description: "Website untuk melakukan pendafataran, perubahan, dan penghapusan badan usaha",
+      technology: ["YII", "Bootstrap", "Mysql", "Jquery"],
+    },
+    {
+      name: "Sistem Administrasi Badan Hukum",
+      thumbnail: "",
+      description: "Website untuk melakukan pendafataran, perubahan, dan penghapusan badan hukum",
+      technology: ["YII", "Bootstrap", "Mysql", "Jquery"],
+    },
+    {
+      name: "Portal AHU",
+      thumbnail: "",
+      description: "Website untuk memberikan informasi tentang Direktorat Jenderal Administrasi Hukum Umum",
+      technology: ["YII", "Bootstrap", "Mysql", "Jquery"],
+    },
+    {
+      name: "Portal DPD RI",
+      thumbnail: "",
+      description: "Website untuk memberikan informasi tentang Dewan Perwakilan Daerah Republik Indonesia",
+      technology: ["Tailwind", "Alpine Js", "Dot Net"],
+    },
+    {
+      name: "Regmus",
+      thumbnail: "",
+      description: "Website ini digunakan untuk melakukan pendaftaran museum secara online",
+      technology: ["Laravel", "Bootstrap", "Mysql", "Jquery"],
+    },
+    {
+      name: "SIKN ANRI",
+      thumbnail: "",
+      description: "Website ini digunakan untuk mengelola arsip nasional",
+      technology: ["Laravel", "Postgresql", "Nuxt Js", "Minio", "Keycloak", "Solr", "Redis"],
+    },
+    {
+      name: "Finpay",
+      thumbnail: "",
+      description: "Website ini digunakan untuk melakukan pembayaran secara online",
+      technology: ["Mysql", "React Js", "Lumen"],
+    },
+    {
+      name: "Viding",
+      thumbnail: "",
+      description: "Website ini digunakan untuk melakukan melakukan virtual wedding dan invitation",
+      technology: ["Laravel", "Bootstrap", "Mysql", "Jquery"],
+    },
+    {
+      name: "Toko Online",
+      thumbnail: "",
+      description: "Website ini digunakan untuk melakukan pembelian secara online",
+      technology: ["Vue Js", "Bootstrap", "Mysql", "Laravel"],
+    },
+    {
+      name: "OKE JEK",
+      thumbnail: "",
+      description: "Aplikasi Mobile dengan flutter digunakan untuk melakukan pesanan ojek online serta pesanan makanan",
+      technology: ["Flutter", "Dart", "Firebase"],
+    },
+    {
+      name: "S-LINK",
+      thumbnail: "",
+      description: "Aplikasi Mobile dengan flutter digunakan untuk melakukan memendekkan link",
+      technology: ["Flutter", "Dart", "Firebase"],
+    },
+    {
+      name: "Kasir",
+      thumbnail: "",
+      description: "Aplikasi sederhana sebagai kasir, dan memonitori stok gudang",
+      technology: ["Livewire", "Bootstrap", "Mysql", "Laravel"],
+    },
+    {
+      name: "Landingpage S-LINK",
+      thumbnail: "",
+      description: "Landingpage untuk aplikasi S-LINK dibangun dengan menggunakan tailwind dan remix js",
+      technology: ["Tailwind", "Remix Js", "Prisma"],
+    },
+    {
+      name: "Quiz",
+      thumbnail: "",
+      description: "Website untuk melakukan management quiz online",
+      technology: ["Laravel", "Bootstrap", "Mysql", "Jquery"],
+    },
+    {
+      name: "Sinopsis",
+      thumbnail: "",
+      description: "Website untuk melakukan memilih ketua OSIS secara online",
+      technology: ["Laravel", "Bootstrap", "Mysql", "Jquery"],
+    },
+    {
+      name: "Ecomplain",
+      thumbnail: "",
+      description: "Website untuk melakukan pengaduan secara online",
+      technology: ["Laravel", "Bootstrap", "Mysql", "Jquery"],
+    },
+    {
+      name: "Travel",
+      thumbnail: "",
+      description: "Website untuk melakukan pemesanan tiket travel secara online",
+      technology: ["Laravel", "Bootstrap", "Mysql", "Jquery"],
+    },
+    {
+      name: "Clone Portal DPD RI",
+      thumbnail: "",
+      description: "Website untuk melakukan cloning website portal DPD RI",
+      technology: ["Next Js", "Tailwind", "Graph QL"],
+    }
+  ]
 };
-
-
-var skill = {
-  advance : [1,2,3,4,5],
-  intermediate : [1,2,3,4],
-  beginner : [1,2,3],
-  other : [1,2,3],
-}
-
-var skill = {
-  advance : [1,2,3,4,5],
-  beginner : [1,2,3],
-  intermediate : [1,2,3,4],
-  other : [1,2,3],
-}
