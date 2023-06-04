@@ -531,5 +531,48 @@ var dataPortfolio = {
       description: "Website untuk melakukan cloning website portal DPD RI",
       technology: ["Next Js", "Tailwind", "Graph QL"],
     }
+  ],
+
+  certificate: [
+    {
+      'image': './assets/images/certificate/fullstack-web-dev.jpg',
+      'name': 'BWA - Fullstack Web Developer, Travel',
+    },
+    {
+      'image': './assets/images/certificate/e-commerce.jpg',
+      'name': 'BWA - Laravel E-Commerce',
+    },
+    {
+      'image': './assets/images/certificate/laravel-vue.jpg',
+      'name': 'BWA - Laravel Vue JS Toko Online',
+    },
+    {
+      'image': './assets/images/certificate/css.jpg',
+      'name': 'Sololearn - CSS',
+    },
+    {
+      'image': './assets/images/certificate/html.jpg',
+      'name': 'Sololearn - HTML',
+    },
+    {
+      'image': './assets/images/certificate/javascript.jpg',
+      'name': 'Sololearn - Javascript',
+    },
+    {
+      'image': './assets/images/certificate/jquery.jpg',
+      'name': 'Sololearn - Jquery',
+    },
+    {
+      'image': './assets/images/certificate/php.jpg',
+      'name': 'Sololearn - PHP',
+    },
+    {
+      'image': './assets/images/certificate/responsive-web.jpg',
+      'name': 'Sololearn - Responsive web design',
+    },
+    {
+      'image': './assets/images/certificate/sql.jpg',
+      'name': 'Sololearn - Sql',
+    }
   ]
 };
