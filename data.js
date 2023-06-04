@@ -547,16 +547,20 @@ var dataPortfolio = {
       'name': 'BWA - Laravel Vue JS Toko Online',
     },
     {
+      'image': './assets/images/certificate/javascript-intermediate.jpg',
+      'name': 'Sololearn - Javascript Intermediate',
+    },
+    {
+      'image': './assets/images/certificate/javascript.jpg',
+      'name': 'Sololearn - Javascript',
+    },
+    {
       'image': './assets/images/certificate/css.jpg',
       'name': 'Sololearn - CSS',
     },
     {
       'image': './assets/images/certificate/html.jpg',
       'name': 'Sololearn - HTML',
-    },
-    {
-      'image': './assets/images/certificate/javascript.jpg',
-      'name': 'Sololearn - Javascript',
     },
     {
       'image': './assets/images/certificate/jquery.jpg',

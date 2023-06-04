@@ -452,8 +452,9 @@
               type="button"
               class="py-1 px-3 rounded bg- font-bold text-white"
               :class="[
-                (projectsPagination.current) >= 1 ? 'bg-mauve-400' : 'bg-mauve-200'
+                (projectsPagination.current + 1) <= 1 ? 'bg-mauve-200' : 'bg-mauve-400'
               ]"
+              :disabled="(projectsPagination.current + 1) <= 1"
               @click="getProject(projectsPagination.current -= 1)"
             >
               &lt;
@@ -467,6 +468,7 @@
               :class="[
                 (projectsPagination.current +1) >= projectsPagination.total ? 'bg-mauve-200' : 'bg-mauve-400'
               ]"
+              :disabled="(projectsPagination.current +1) >= projectsPagination.total"
               @click="getProject(projectsPagination.current += 1)"
             >
               &gt;
