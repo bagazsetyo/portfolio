@@ -195,7 +195,7 @@
                     ></div>
                   </div>
                   <a
-                    href="javascript:void(0)"
+                    href="mailto:bagazfrazetyo@gmail.com"
                     class="flex-shrink-0 w-10 h-10 rounded-full border-2 border-carnation-pink-400 inline-flex items-center justify-center text-white relative z-10 text-2xl bg-carnation-pink-300"
                   >
                     <i class="fa-solid fa-envelope fa-sm"></i>
@@ -210,7 +210,7 @@
                     ></div>
                   </div>
                   <a
-                    href="javascript:void(0)"
+                    href="https://www.linkedin.com/in/bagas-setyo-64a209169/"
                     class="flex-shrink-0 w-10 h-10 rounded-full border-2 border-carnation-pink-400 inline-flex items-center justify-center text-white relative z-10 text-2xl bg-carnation-pink-300"
                   >
                     <i class="fa-brands fa-linkedin fa-sm"></i>
@@ -225,7 +225,7 @@
                     ></div>
                   </div>
                   <a
-                    href="javascript:void(0)"
+                    href="https://github.com/bagazsetyo"
                     class="flex-shrink-0 w-10 h-10 rounded-full border-2 border-carnation-pink-400 inline-flex items-center justify-center text-white relative z-10 text-2xl bg-carnation-pink-300"
                   >
                     <i class="fa-brands fa-github fa-sm"></i>
@@ -434,7 +434,7 @@
           Hasil dari kerja dan belajar yang pernah saya kerjakan
         </p>
         <div
-          class="max-w-lg lg:max-w-none mb-3 flex flex-wrap justify-between lg:justify-start items-center lg:gap-3"
+          class="max-w-lg lg:max-w-none mb-3 flex flex-wrap justify-between lg:justify-end items-center lg:gap-3"
         >
           <!-- dropdown -->
           <select
@@ -475,7 +475,7 @@
             </button>
           </div>
         </div>
-        <div class="w-full">
+        <div class="w-full text-right font-normal">
           Total project : <span x-text="projectsCount"></span>
         </div>
         <div class="grid md:grid-cols-3 gap-3">
@@ -649,25 +649,6 @@
                   x-if="!skillDetailModal.project || skillDetailModal.project.length == 0"
                 >
                   <p class="text-sm text-gray-500">Tidak ada project</p>
-                </template>
-              </div>
-            </div>
-            <div>
-              <h1 class="mt-2 text-lg font-bold text-gray-800">Sertifikat</h1>
-              <div class="flex flex-row gap-3">
-                <template
-                  x-for="(skillCertificate, index) in skillDetailModal.certificate"
-                  x-key="index"
-                >
-                  <a
-                    href="javascript:;"
-                    class="border border-orange-300 rounded-md px-2 py-1 text-sm text-gray-500"
-                  >
-                    Sertifikat 1
-                  </a>
-                </template>
-                <template x-if="!skillDetailModal.certificate">
-                  <p class="text-sm text-gray-500">Tidak ada sertifikat</p>
                 </template>
               </div>
             </div>
