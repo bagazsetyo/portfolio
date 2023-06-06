@@ -649,11 +649,6 @@ html {
   margin: 0px;
 }
 
-.-mx-4 {
-  margin-left: -1rem;
-  margin-right: -1rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -674,20 +669,12 @@ html {
   margin-bottom: auto;
 }
 
-.-mb-10 {
-  margin-bottom: -2.5rem;
-}
-
 .-ml-3 {
   margin-left: -0.75rem;
 }
 
 .-ml-3\.5 {
   margin-left: -0.875rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .mb-2 {
@@ -708,10 +695,6 @@ html {
 
 .mb-6 {
   margin-bottom: 1.5rem;
-}
-
-.ml-1 {
-  margin-left: 0.25rem;
 }
 
 .ml-10 {
@@ -744,10 +727,6 @@ html {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.ml-auto {
-  margin-left: auto;
 }
 
 .line-clamp-3 {
@@ -887,10 +866,6 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.list-none {
-  list-style-type: none;
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -913,10 +888,6 @@ html {
 
 .items-center {
   align-items: center;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1091,11 +1062,6 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-80 {
   --tw-bg-opacity: 0.8;
 }
@@ -1163,11 +1129,6 @@ html {
   padding-bottom: 0.5rem;
 }
 
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1189,6 +1150,10 @@ html {
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-left {
@@ -1449,11 +1414,6 @@ html {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
-.hover\:text-gray-800:hover {
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
-}
-
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
@@ -1577,10 +1537,6 @@ html {
     display: none;
   }
 
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1621,17 +1577,9 @@ html {
   .md\:pb-0 {
     padding-bottom: 0px;
   }
-
-  .md\:text-left {
-    text-align: left;
-  }
 }
 
 @media (min-width: 1024px) {
-  .lg\:w-1\/6 {
-    width: 16.666667%;
-  }
-
   .lg\:max-w-none {
     max-width: none;
   }
@@ -1646,10 +1594,6 @@ html {
 
   .lg\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  .lg\:justify-start {
-    justify-content: flex-start;
   }
 
   .lg\:justify-end {
